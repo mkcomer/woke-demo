@@ -1,4 +1,4 @@
-# in this example, both albeist and violent rules are excluded
+# in this example, both abelist and violent rules are excluded
 exclude_categories:
   - abelist
   - violent
