@@ -15,7 +15,7 @@ rules:
       - impulsive
     options: 
       categories:
-        - albeist  
+        - abelist
 
   - name: dumb
     terms: 
@@ -30,7 +30,7 @@ rules:
       - dismiss
     options: 
       categories:
-        - albeist 
+        - abelist 
 
   - name: crippled
     terms: 
@@ -44,7 +44,7 @@ rules:
       - stuck
     options: 
       categories:
-        - albeist
+        - abelist
 
   - name: sanity-check
     terms: 
@@ -55,7 +55,7 @@ rules:
       - check for clarity 
     options: 
       categories:
-        - albeist  
+        - abelist  
 
   - name: blind
     terms: 
@@ -71,7 +71,7 @@ rules:
       - people who are blind
     options: 
       categories:
-        - albeist
+        - abelist
 
   - name: shoot
     terms:
