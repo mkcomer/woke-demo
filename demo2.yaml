@@ -1,0 +1,98 @@
+# in this example, both rule1 and rule2 are excluded
+exclude_categories:
+  - gender
+
+rules:
+  - name: girlfriend
+    terms:
+      - girlfriend
+      - girl-friend
+    alternatives:
+      - partner
+    severity: warning
+    options:
+      categories:
+        - gender
+        - relationship
+
+  - name: boyfriend
+    terms:
+      - boyfriend
+      - boy-friend
+    alternatives:
+      - partner
+    options:
+      categories:
+        - gender
+        - relationship
+
+  - name: wife
+    terms:
+      - wife
+    alternatives:
+      - spouse
+    options:
+      categories:
+        - gender
+        - relationship
+
+  - name: husband
+    terms:
+      - husband
+    alternatives:
+      - spouse
+      - partner
+    options:
+      categories:
+        - gender
+        - relationship
+
+  - name: guys
+    terms:
+      - you guys
+      - boys
+      - men
+    alternatives:
+      - people
+      - folks
+      - you all
+    options:
+      categories:
+        - gender
+  
+  - name: girls
+    terms:
+      - ladies
+      - women
+      - feamles
+    alternatives:
+      - people
+      - folks
+    options:
+      categories:
+        - gender
+
+  - name: girls
+    terms:
+      - ladies
+    alternatives:
+      - people
+      - folks
+    options:
+      categories:
+        - gender
+
+   - name: handicap
+    alternatives:
+      - disabled
+    options:
+      categories:
+        - health
+
+  - name: minority
+    alternatives:
+      - underrepresented 
+      - specify the ethic group 
+    options:
+      categories:
+        - race
