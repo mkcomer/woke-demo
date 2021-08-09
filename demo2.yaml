@@ -1,19 +1,26 @@
-# in this example, both relationship and race rules are excluded
+# in this example, both albeist and violent rules are excluded
 exclude_categories:
-  - gendered
-  
+  - albeist
+  - violent
+
 rules:
   - name: crazy
     terms: 
+      - crazy
+      - bonkers
       - insane
     alternatives:
-      - doesn't make sense
+      - wild
+      - confusing
+      - reackless
+      - impulsive
     options: 
       categories:
-        - albeist 
+        - albeist  
 
   - name: dumb
     terms: 
+      - dumb
       - foolish
       - mindless
       - silly
@@ -25,18 +32,12 @@ rules:
     options: 
       categories:
         - albeist 
-  
-  - name: dummy
-    terms: 
-    alternatives:
-      - placeholder
-    options: 
-      categories:
-        - albeist 
 
   - name: crippled
     terms: 
+      - crippled
       - cripples
+      - cripple
     alternatives:
       - slows down 
       - frozen by
@@ -46,20 +47,9 @@ rules:
       categories:
         - albeist
 
-  - name: crazy
-    terms: 
-      - bonkers
-    alternatives:
-      - wild
-      - confusing
-      - reackless
-      - impulsive
-    options: 
-      categories:
-        - albeist  
-
   - name: sanity-check
     terms: 
+      - sanity-check
       - sanity check
     alternatives:
       - check for completeness
@@ -70,7 +60,9 @@ rules:
 
   - name: blind
     terms: 
+      - blind
       - blind eye
+      - blind-eye
       - blind to
       - blind spot
     alternatives:
@@ -81,6 +73,24 @@ rules:
     options: 
       categories:
         - albeist
+
+  - name: shoot
+    terms:
+      - shoot
+    alternatives:
+      - send
+    options:
+      categories:
+        - violent
+
+  - name: stab
+    terms:
+      - stab
+    alternatives:
+      - try
+    options:
+      categories:
+        - violent
 
   - name: girlfriend
     terms:
@@ -148,53 +158,10 @@ rules:
 
   - name: mankind
     terms:
+      - mankind
       - man-kind
     alternatives:
       - humanity
     options:
       categories:
         - gendered
-
-  - name: target
-    terms:
-    alternatives:
-      - key
-      - intended
-    options:
-      categories:
-        - violent
-
-  - name: shoot
-    terms:
-    alternatives:
-      - send
-    options:
-      categories:
-        - violent
-
-  - name: stab
-    terms:
-    alternatives:
-      - try
-    options:
-      categories:
-        - violent
-
-  - name: shot
-    terms:
-      - take your best shot
-    alternatives:
-      - do your best
-      - try
-    options:
-      categories:
-        - violent
-
-  - name: execute
-    terms:
-      - execute a plan
-    alternatives:
-      - follow through
-    options:
-      categories:
-        - violent
