@@ -1,10 +1,11 @@
-# in this example, both relationship and race rules are excluded
+# in this example, gendered rules are excluded
 exclude_categories:
   - gendered
 
 rules:
   - name: crazy
     terms: 
+      - crazy
       - bonkers
       - insane
     alternatives:
@@ -18,6 +19,7 @@ rules:
 
   - name: dumb
     terms: 
+      - dumb
       - foolish
       - mindless
       - silly
@@ -29,18 +31,12 @@ rules:
     options: 
       categories:
         - albeist 
-  
-  - name: dummy
-    terms: 
-    alternatives:
-      - placeholder
-    options: 
-      categories:
-        - albeist 
 
   - name: crippled
     terms: 
+      - crippled
       - cripples
+      - cripple
     alternatives:
       - slows down 
       - frozen by
@@ -52,6 +48,7 @@ rules:
 
   - name: sanity-check
     terms: 
+      - sanity-check
       - sanity check
     alternatives:
       - check for completeness
@@ -62,6 +59,7 @@ rules:
 
   - name: blind
     terms: 
+      - blind
       - blind eye
       - blind-eye
       - blind to
@@ -75,17 +73,9 @@ rules:
       categories:
         - albeist
 
-  - name: target
-    terms:
-    alternatives:
-      - key
-      - intended
-    options:
-      categories:
-        - violent
-
   - name: shoot
     terms:
+      - shoot
     alternatives:
       - send
     options:
@@ -94,27 +84,9 @@ rules:
 
   - name: stab
     terms:
+      - stab
     alternatives:
       - try
-    options:
-      categories:
-        - violent
-
-  - name: shot
-    terms:
-      - take your best shot
-    alternatives:
-      - do your best
-      - try
-    options:
-      categories:
-        - violent
-
-  - name: execute
-    terms:
-      - execute a plan
-    alternatives:
-      - follow through
     options:
       categories:
         - violent
@@ -185,6 +157,7 @@ rules:
 
   - name: mankind
     terms:
+      - mankind
       - man-kind
     alternatives:
       - humanity
