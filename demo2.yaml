@@ -1,8 +1,87 @@
-# in this example, both rule1 and rule2 are excluded
+# in this example, both relationship and race rules are excluded
 exclude_categories:
-  - gender
-
+  - gendered
+  
 rules:
+  - name: crazy
+    terms: 
+      - insane
+    alternatives:
+      - doesn't make sense
+    options: 
+      categories:
+        - albeist 
+
+  - name: dumb
+    terms: 
+      - foolish
+      - mindless
+      - silly
+      - imbecile
+    alternatives:
+      - overlook
+      - disregard 
+      - dismiss
+    options: 
+      categories:
+        - albeist 
+  
+  - name: dummy
+    terms: 
+    alternatives:
+      - placeholder
+    options: 
+      categories:
+        - albeist 
+
+  - name: crippled
+    terms: 
+      - cripples
+    alternatives:
+      - slows down 
+      - frozen by
+      - stopped by
+      - stuck
+    options: 
+      categories:
+        - albeist
+
+  - name: crazy
+    terms: 
+      - bonkers
+    alternatives:
+      - wild
+      - confusing
+      - reackless
+      - impulsive
+    options: 
+      categories:
+        - albeist  
+
+  - name: sanity-check
+    terms: 
+      - sanity check
+    alternatives:
+      - check for completeness
+      - check for clarity 
+    options: 
+      categories:
+        - albeist  
+
+  - name: blind
+    terms: 
+      - blind eye
+      - blind to
+      - blind spot
+    alternatives:
+      - overlook
+      - disregard 
+      - dismiss
+      - people who are blind
+    options: 
+      categories:
+        - albeist
+
   - name: girlfriend
     terms:
       - girlfriend
@@ -12,8 +91,7 @@ rules:
     severity: warning
     options:
       categories:
-        - gender
-        - relationship
+        - gendered
 
   - name: boyfriend
     terms:
@@ -23,8 +101,7 @@ rules:
       - partner
     options:
       categories:
-        - gender
-        - relationship
+        - gendered
 
   - name: wife
     terms:
@@ -33,8 +110,7 @@ rules:
       - spouse
     options:
       categories:
-        - gender
-        - relationship
+        - gendered
 
   - name: husband
     terms:
@@ -44,55 +120,81 @@ rules:
       - partner
     options:
       categories:
-        - gender
-        - relationship
+        - gendered
 
   - name: guys
     terms:
       - you guys
       - boys
-      - men
     alternatives:
       - people
       - folks
       - you all
     options:
       categories:
-        - gender
+        - gendered
   
   - name: girls
     terms:
       - ladies
       - women
-      - feamles
+      - females
     alternatives:
       - people
       - folks
     options:
       categories:
-        - gender
+        - gendered
 
-  - name: girls
+  - name: mankind
     terms:
-      - ladies
+      - man-kind
     alternatives:
-      - people
-      - folks
+      - humanity
     options:
       categories:
-        - gender
+        - gendered
 
-   - name: handicap
+  - name: target
+    terms:
     alternatives:
-      - disabled
+      - key
+      - intended
     options:
       categories:
-        - health
+        - violent
 
-  - name: minority
+  - name: shoot
+    terms:
     alternatives:
-      - underrepresented 
-      - specify the ethic group 
+      - send
     options:
       categories:
-        - race
+        - violent
+
+  - name: stab
+    terms:
+    alternatives:
+      - try
+    options:
+      categories:
+        - violent
+
+  - name: shot
+    terms:
+      - take your best shot
+    alternatives:
+      - do your best
+      - try
+    options:
+      categories:
+        - violent
+
+  - name: execute
+    terms:
+      - execute a plan
+    alternatives:
+      - follow through
+    options:
+      categories:
+        - violent
