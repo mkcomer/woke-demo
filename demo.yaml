@@ -1,17 +1,20 @@
 # in this example, both relationship and race rules are excluded
 exclude_categories:
-  - albeist
-  - violent
+  - gendered
 
 rules:
   - name: crazy
     terms: 
+      - bonkers
       - insane
     alternatives:
-      - doesn't make sense
+      - wild
+      - confusing
+      - reackless
+      - impulsive
     options: 
       categories:
-        - albeist 
+        - albeist  
 
   - name: dumb
     terms: 
@@ -47,18 +50,6 @@ rules:
       categories:
         - albeist
 
-  - name: crazy
-    terms: 
-      - bonkers
-    alternatives:
-      - wild
-      - confusing
-      - reackless
-      - impulsive
-    options: 
-      categories:
-        - albeist  
-
   - name: sanity-check
     terms: 
       - sanity check
@@ -72,6 +63,7 @@ rules:
   - name: blind
     terms: 
       - blind eye
+      - blind-eye
       - blind to
       - blind spot
     alternatives:
@@ -82,6 +74,50 @@ rules:
     options: 
       categories:
         - albeist
+
+  - name: target
+    terms:
+    alternatives:
+      - key
+      - intended
+    options:
+      categories:
+        - violent
+
+  - name: shoot
+    terms:
+    alternatives:
+      - send
+    options:
+      categories:
+        - violent
+
+  - name: stab
+    terms:
+    alternatives:
+      - try
+    options:
+      categories:
+        - violent
+
+  - name: shot
+    terms:
+      - take your best shot
+    alternatives:
+      - do your best
+      - try
+    options:
+      categories:
+        - violent
+
+  - name: execute
+    terms:
+      - execute a plan
+    alternatives:
+      - follow through
+    options:
+      categories:
+        - violent
 
   - name: girlfriend
     terms:
@@ -155,47 +191,3 @@ rules:
     options:
       categories:
         - gendered
-
-  - name: target
-    terms:
-    alternatives:
-      - key
-      - intended
-    options:
-      categories:
-        - violent
-
-  - name: shoot
-    terms:
-    alternatives:
-      - send
-    options:
-      categories:
-        - violent
-
-  - name: stab
-    terms:
-    alternatives:
-      - try
-    options:
-      categories:
-        - violent
-
-  - name: shot
-    terms:
-      - take your best shot
-    alternatives:
-      - do your best
-      - try
-    options:
-      categories:
-        - violent
-
-  - name: execute
-    terms:
-      - execute a plan
-    alternatives:
-      - follow through
-    options:
-      categories:
-        - violent
