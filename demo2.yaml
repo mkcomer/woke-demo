@@ -1,6 +1,6 @@
-# in this example, both abelist and violent rules are excluded
+# in this example, both ableist and violent rules are excluded
 exclude_categories:
-  - abelist
+  - ableist
   - violent
 
 rules:
@@ -16,7 +16,7 @@ rules:
       - impulsive
     options: 
       categories:
-        - abelist  
+        - ableist  
 
   - name: dumb
     terms: 
@@ -31,7 +31,7 @@ rules:
       - dismiss
     options: 
       categories:
-        - abelist
+        - ableist
 
   - name: crippled
     terms: 
@@ -45,7 +45,7 @@ rules:
       - stuck
     options: 
       categories:
-        - abelist
+        - ableist
 
   - name: sanity-check
     terms: 
@@ -56,7 +56,7 @@ rules:
       - check for clarity 
     options: 
       categories:
-        - abelist  
+        - ableist  
 
   - name: blind
     terms: 
@@ -72,7 +72,7 @@ rules:
       - people who are blind
     options: 
       categories:
-        - abelist
+        - ableist
 
   - name: shoot
     terms:
