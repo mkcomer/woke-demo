@@ -1,0 +1,14 @@
+At CSE, we write our developer documentation with inclusivity and diversity in mind.
+
+It takes a crazy amount of configuration to deploy this service in another environment. 
+Before launch, give everything a final sanity-check.
+There are some crazy outliers in the data.
+It cripples the service, causing a poor user experience until the queue clears.
+Replace the dummy variable in this example with the appropriate variable.
+Equipment installation takes around 16 man-hours to complete.
+This API might be just what your globally conscious company needs to help all of mankind.
+You guys should try this tutorial before writing your code.
+My boyfriend invited me to dinner.
+Trying to understand the intricacies of this code will take a dumb amount of time. 
+If we don't add another node, the service will be crippled.
+In this implementation, we turned a blind eye to the end user experience, and rather focused on the buisiness logic.
